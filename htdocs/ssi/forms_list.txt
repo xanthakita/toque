@@ -1,0 +1,40 @@
+FORMS LIST
+
+Login (login.php)
+
+Logout (logout.php ~ INVISIBLE. Handles termination of session/logout)
+
+New Recipe (new_recipe.php)
+
+New User
+    Username
+    Password
+    
+
+Account View (account_view.php)
+    Shows:
+    Username
+    Password Options
+    
+Delete Recipe (delete_recipe.php)
+    Only usable by recipe creator
+
+Search (search_recipe.php)
+    Search for recipes by:
+    Name
+    Chef
+    Date submitted (?)
+    Taste (up to 2)
+    Style (up to 2)
+    #Do we need standard and advanced search forms or just one comprehensive search form?
+        #I think just one. Keep it simple.
+        #Add below if you think we need to be able to search any other factors.
+        #Refer to the functional spec if you need to see what fields are in the database and in what table(s).
+        #Otherwise let me know if you can't see what you need and I'll send a screenprint of tables.
+
+Cookbook
+    #Displays recently-added recipes in a vertical list. If users want to search for recipes, they should
+    #use the Search form/feature. Include a link out to the search form at top of Cookbook.
+
+Password Reset
+    #Allows users to reset password stored in the database.

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	/*$.ajax({url:"test.json", success:function(json) {
+		alert("connected");
+		document.body.innerHTML = json;
+	}});
+*/	//document.body.innerHTML = txt.name;
+	$.getJSON("recipe.json",function(json) {
+		//alert("connected");
+		$("body").html(json.ingredients[1].name);
+		//document.body.innerHTML = json.name;
+	});
+});
+</script>
+</head>
+
+<body>
+</body>
+</html>

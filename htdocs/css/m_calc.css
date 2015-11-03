@@ -1,0 +1,90 @@
+/* CSS Document */
+@import url('/css/m_base.css');
+
+.calc {
+	font-family: "Courier New", Courier, monospace;
+	margin: 0 auto;
+	padding: 1%;
+	position: relative;
+	overflow-y: hidden;
+}
+
+.calc > div {
+	margin: 1.5% auto;
+}
+
+.calc > div > div {
+	margin: 0;
+	padding: 1%;
+	width: 46%;
+	float: left;
+	font-size: 2em;
+}
+
+.calc > div > div:first-child {
+	clear: both;
+}
+
+.calc > div > div:only-child {
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.calc span {
+	font-variant: small-caps;
+	text-align: left;
+	font-weight: bolder;
+	font-size: 1.1em;
+}
+
+.calc input {
+	background-color: #471b15;
+	border-color: #331513 #521f14 #521f14 #331513;
+	color: #fff;
+	font-size: 1em;
+}
+
+.calc input[disabled] {
+	color: #999;
+}
+
+#vals {
+	display:none;
+}
+
+.buttons {
+	background-color: #471b15;
+	/*
+	border-image-source: url(/images/choco_square.png);
+	border-image-slice: 15;
+	border-image-width: 5px;
+	border-image-outset: 5px;
+	*/
+	border: 5px solid;
+	border-radius: 3px;
+	border-color: #521f14 #331513 #331513 #521f14;
+	padding: 2px 0;
+	text-align: center;
+	font: 1em bold;
+	color: #F90;
+}
+
+.buttons:hover {
+	border-color:  #331513 #521f14 #521f14 #331513;
+	padding: 3px 0;
+	font-size: 0.875em;
+	color: #fff;
+	cursor: pointer;
+}
+
+#recalc {
+	float: right;
+	margin-right: 5px;
+	width: 6em;
+}
+
+#reset {
+	float: left;
+	width: 3em;
+}

@@ -1,0 +1,324 @@
+if you make changes please add a note to the end of this file:
+
+Jonathan Wagner - 1-9-2013 - Added Changelog.txt
+Jonathan Wagner - 1-9-2013 - Added index.htm placeholder
+
+Elliot Derhay - 1-9-2013 5:32pm - Added images folder and SVG of WIP logo
+
+Jonathan Wagner -  1-10-2013 6:04am - code to display the SVG file on the temp page. I cant get it to reduce in size... I'm sure it's just me this is teh first I have worked with svg files
+
+Elliot Derhay
+2-7-2013 11:05pm
+	-- uploaded final version of square Toque logo;
+	-- modified index.htm embed code to match new file (SVG isn't really necessary, was just curious to see if it would work);
+	-- code modifications change from an "<embed>" element to an "<object>" element;
+2-8-2013 6:57pm
+	-- uploaded base.css and new index.htm docs for working design, as well as our linear and square logos;
+	-- enabled check-in/check-out feature on my end so others can see what I'm working on;
+
+db - 2-9-2013 0:20 - No changes made; just checking in. Looks good.
+
+Elliot Derhay
+2-9-2013 12:29am
+	checking in base.css and index.css
+	-- swapped recipe and side columns;
+	-- gave navbar links some meaning;
+	-- added tag segment to recipe column with example color-coded tags;
+
+Paige Myers - 2-9-2013 6:27pm
+ Made some changes to the formatting, added a few dummy links for future expansion.
+ 
+Elliot Derhay
+2-9-2013 6:46pm
+	Checking in base.css, index.htm, and recipe.htm
+	-- moved recipe example page to recipe.htm;
+	-- slightly modified recipe tag examples;
+	-- index.htm now contains our linear banner;
+2-9-2013 10:22pm
+	Checking in base.css and recipe.htm
+	-- added basic cost calculator table design (too much hard coding at the moment; needs improvement)
+2-10-2013 11:14am
+	Checking in base.css and recipe.htm
+	-- removed half the table rows previously coded
+	-- simplified calculator look and explanation
+	-- changed global font to sans-serif family
+	-- changed cost calculator font to monospace family
+	-- put "advanced search" link in "quick search" box
+2-11-2013 10:16pm
+	Checking in base.css and recipe.htm
+	-- Added recipe image placeholder
+	-- Added example recipe (title, number of servings, directions, and attribution placeholder)
+	-- Changed some of the spacing around the recipe column elements
+	-- Added recipe-column-specific text formatting
+2-12-2013 9:26am
+	Checking in recipe.htm
+	-- separated recipe placeholder steps (they looked like a paragraph before)
+2-15-2013 1:11am
+	Checking in base.css and recipe.htm
+	-- removed placeholder colors
+	-- changed color scheme to something leaning more towards delicious-looking
+	-- transfered some spacing styles for better color scheme control
+2-16-2013 11:34am
+	Checking in base.css and recipe.php:  the "shell" for the other site pages should be complete now.
+	-- replaced recipe.htm with recipe.php in preparation for making pages uniform
+	-- moved the header and footer areas of the page outside the main content area for a new look
+	-- made some minor color and placement adjustments
+2-17-2013 9:28pm
+	Checking in index.php, recipe.php, sideInclude.php, and base.css
+	-- replaced index.htm with index.php
+	-- replaced side content, header, and footer areas with include files
+	-- created test scroller area for popular and new recipes to display on site
+	-- set a php if...else statement in sideInclude.php that displays the cost calculator if a recipe is open
+2-17-2013 11:32pm
+	Checking in base.css and sideInclude.php
+	-- adjusted the popular and recent divs to accomodate the recipe image placeholders
+	-- Hid the vertical scrollbar for more room and visual appeal
+	-- formulas for scrolling divs (vertical overflow will be hidden to maintain horizontal length)
+			width:  ([img width] + [right margin] + ([border width] * 2)) * [div number] + 4 (margin of error for rendering issues)
+			height:  [img height] + [bottom margin] + [border width]
+
+2-18-2013 18:53 (db)
+	Uploaded database.php
+	-- This will supply connection strings for the main (recipe) database. Should 
+		function with an include (database.php) statement.
+	-- Moved database.php to /ssi
+
+	-- Created /index2.php. This index successfully connects to the database 
+		using ssi/database.php and provides an echo under the title bar
+		confirming the connection.
+		
+Elliot Derhay
+2-18-2013 11:49pm
+	Uploaded header_black.jpg
+	Checking in base.css, footer.htm, header.htm, index.php and recipe.php
+	-- no changes made in last 2 files, just needed them for reference
+	-- added a user menu alongside the main menu
+	-- adjusted styles for header area, mainly background (can be redone if size needs to change)
+	
+Jonathan Wagner
+2-19-2013  6:34am
+	uploaded adsense-ad.inc
+	this is the code for the google adsense leaderboard. 
+	renaming it to adsens-lb.inc
+	
+2-19-2013  6:58am
+	modified ssi/header.htm to include the adsense-lb.inc file.This all javascript so there may be a better place to do this.
+	
+Elliot Derhay
+2-19-2013 11:47am
+	Checking in base.css, footer.htm, header.htm, sideInclude.php, index.php and recipe.php
+	-- corrected an issue in sideInclude.php that was making the body div on non-recipe pages absorb the footer
+	-- slightly modifed header text styles
+	-- modified header navbar placeholders
+	-- segmented footer into 3 main pieces:  1 large left, 2 small right
+	-- created new styles for footer (thanks Paige for the footer ideas)
+2-19-2013 6:14pm
+	Uploaded jade.jpg
+	Checking in base.css, header_background.jpg, sideInclude.php and index.php
+	-- updated header image and side div background
+	-- changed side div link color
+
+Dave Brothers
+2-23-13 0:59
+        -- Altered index2.php with some preliminary form code. Need to get JW to remind me how we had said we were going to
+            store/associate each recipe's ingredients (as in how they relate to each recipe, not just the table of available
+            ingredients).
+
+Elliot Derhay
+2-23-2013 3:45pm
+	Uploaded chocolate_gradient.jpg
+	Checking in base.css
+	-- added a test chocolate-like gradient image to the footer's background
+		NOTE: if the idea seems good, I'll create chocolate square images to fit each of the 3 footer segments instead
+	-- changed page background to match, in case of larger screens
+	-- set top padding in footer to keep content below gradient edge
+	-- resized right divs to have a total width of 25% each
+
+Dave Brothers
+2-23-13 19:00
+        -- Played with some index2.php stuff. Took the date coding down to single line. Added some comment documentation.
+        -- Will continue messing with the PHP for a bit on and off tonight; not checking out index2.php since I don't see a 
+                reason anyone else would be working in it today.
+
+        20:45
+        -- ## DATABASE CHANGES ## --
+        -- Renamed the fields in the Recipe table for consistent casing
+
+        -- Uploaded new_recipe_form.php; IS INCOMPLETE.
+
+Elliot Derhay
+2-24-2013 12:31am
+	Uploaded choco_square.png (newer version) and chocolate_square.png (forgot to edit the log last time)
+	Checking in base.css
+	-- edited the footer styles again, this time for a more chocolate-like look
+		NOTE:  previous version had a thinner, rounder border (chocolate_square.png);
+		Comment: Ilike the look! - jmw
+		
+Jonathan Wagner
+2-24-2013
+	Working on local code to pparse the recipies and to pull the images for the recipies we currently have. 
+	
+Jonathan Wagner
+2-25-2013
+	Uploaded and modified parser code to parse exisiting recipes from current source file. Added standard measures as defined at http://www.convert-me.com/en/convert/cooking/ to the Measurements table
+
+Dave Brothers
+2-26-2013
+        20:43
+        -- renamed new_recipe_form.php to new_recipe.php to prevent confusion. From now on, forms for display will be amended with 
+            _form, while their PHP back-ends will have the same name without _form. (i.e., new_recipe.php is the back-end
+            processing for new_recipe_form.php, which will be the form with which the user interacts.).
+
+        22:15
+        -- made some minor changes to new_recipe_form.php, including using the HTML5 textarea placeholder attribute to incorporate hints for users.
+
+2-27-2013
+        18:40
+        -- ## DATABASE CHANGES ## --
+        -- Added measurements "Pinch" and "To Taste" to measurements table.
+        -- ALTERed style table to mimic exactly the taste table. Both now have 2 fields: an id and a varchar description.
+
+        -- Punched myself for changing database as a result of not understanding things we had discussed. Changed it back.
+        "Taste" will now describe all keywords which tell about a recipe. 
+
+        22:32
+        -- Changed connection method of database.php to PDO (older mysql_ functions are deprecated in PHP5)
+        -- Got Tastes select boxes working on new_recipe_form.php
+        -- ## DATABASE CHANGES ## --
+        -- Renamed "Tastes" table to "tastes" for casing consistency
+        -- Added a NULL record to tastes table to allow for blank tastes in recipe input
+        -- Added "Heart-healthy" to list of tastes
+
+3-1-13
+        11:51
+        -- Began work today on new_user_form.php. Formatting is broken while I work on fields display. May want a separate CSS element
+            for this form, or may simply want to change the sideinclude. 
+        -- Made some minor changes to new_recipe_form.php. Considering wrapping the labels and input fields in a table for more
+            uniform display. ELLIOT, your thoughts on this?
+			Elliot:	That's how I learned to build forms.  CSS forms can be done though, and table elements aren't affected by a lot of CSS positioning and sizing attributes for some odd reason...  Other thoughts?
+			
+Elliot Derhay
+3-1-13 1:32pm
+	Uploaded JS folder, calc.js and calcTest.html.  Starting calculator programming after 3:20pm.
+3-1-13 6:39pm
+	Uploaded jquery-1.9.1.min.js (minimized jQuery library)
+	Checking in calc.js, calcTest.css and calcTest.html
+	-- copied calculator from sideInclude.php to calcTest.html for calculator testing
+	-- replaced calculator placeholder values with functional text fields
+	-- created styles for test pages, including new "Recalculate" and "Reset" chocolate buttons styles
+	-- created jQuery-based cost calculator.
+		FUNCTIONS:
+		1) reading in cost data from hidden field
+		2) calculating ingredient costs (needed amount - on-hand amount * cost per grocery unit)
+		3) calculating and displaying final cost based on how many batches will be made
+		4) resetting values back to default (0 on hand, 1 batch, recalculating based on these values)
+		NOTE:  Need to figure out how to tell user the calculator is based on groceries, not measuring units
+		COMMENT:  go to [site]/js/calcTest.html to test the calculator
+3-1-13 7:13pm
+	Uploaded favicon.ico
+3-1-13 10:30pm
+	Uploaded calc.css (modifed calcTest.css)
+	Checking in calc.css, calc.js, sideInclude.php and recipe.php
+	-- attached calc.css to recipe.php for button styles, though with slight changes
+	-- replaced calculator placeholder in sideInclude.php with functional calculator from calcTest.html
+		NOTE:  This calculator has a hidden span element in it with ID "vals" in it.  Prices are in 2 decimal format (no dollar sign), each ending with a semicolon.  This data is all that's needed in the SPAN element for the calculator to function correctly, so long as the number of unit prices matches the number of ingredients displayed in the calculator (in this case, the number of semicolons, since there's 1 at the end of each price).
+3-1-13 10:32
+	Checking in sideInclude.php
+	-- modified the calculator's item displaying prices to match the hidden span element.  Placeholder prices should make more sense now.
+
+Dave Brothers
+3-3-2013
+        -- ## DATABASE CHANGES ## --
+        -- Changed name of table 'Users' to 'users' for casing consistency
+		
+Elliot Derhay
+3-5-13 5:33pm
+	Checking in base.css
+	-- Changed look of calculator input fields
+3-5-13 6:59pm
+	Uploaded (/css) m_base.css, m_base_IE.css, m_calc.css, (/mobi) index.php and recipe.php
+	Checking in (/css) m_base.css, (/mobi) index.php recipe.php
+	-- added and modified first mobile styles
+3-6-13 12:24am
+	Checking in (/css) m_base.css, (/mobi) index.php and recipe.php
+	-- corrected some style mistakes from earlier
+	-- corrected PHP include issue (forgot PHP includes are page-relative)
+3-7-13 8:35pm
+	Checking in calc.css, base.css, recipe.php and sideInclude.php
+	-- moved some calculator-specific styles from base.css and m_base.css to calc.css and m_calc.css (respectively)
+	-- replaced calculator table with a set of divs (easier CSS manipulation)
+	
+Dave Brothers
+3-9-13 19:20
+        -- Created front and back ends for a password reset request form. Form successfully sends email to users.
+        -- Still need to implement the actual reset form.
+		
+Elliot Derhay
+3-11-13 11:41pm
+	Uploaded cookbook.css and cookbook.php
+	Checking in (/css) base.css, calc.css, cookbook.css, m_calc.css, (/mobi) index.php, recipe.php, (/ssi) header.htm, (/) cookbook.php, index.php and recipe.php
+	-- Added cookbook sample content and styles for discussion
+	-- updated header to link to cookbook page
+	-- updated some php files to link to only 1 stylesheet
+	-- added @import rule into appropriate stylesheets
+3-12-13 12:02am
+	Checking in cookbook.css
+	-- Adjusted recipe link styles to be easier to look at
+3-12-13 10:59pm
+	Uploaded (/js) general.js and (/test_modules) floating_div.html (for testing floating login div)
+	Checking in (/css) base.css, (/js) general.js, (/ssi) float.html, header.htm, (/test_modules) floating_div.html, (/) cookbook.php, index.php, new_recipe_form.php, new_user_form.php and recipe.php
+	-- added new elements, styles, and functions for floating login div
+	-- linked show function to "login/sign up" item in header
+	-- modified floating div styles to not blend as much with background while sliding upward
+3-12-13 11:01pm
+	Checking in (/js) general.js
+	-- modified overlay z-index timing for better sync
+
+
+Dave Brothers
+3-13-13
+        -- Checking out index.php to write copy for home page. Done
+        -- Changed ssi/footer.htm to ssi.footer.php to allow for php scripting. 
+        NEED TO MAKE SURE THAT ALL VIEW FILES ARE UPDATED WITH THE CHANGED REFERENCE.
+        I think I got them all changed. Someone double-check behind me?
+        -- BAM!!! Slick new full PHP5 validation with functions implemented into ssi/new_user.php. Also cleaned up the file a bit.
+		
+Elliot Derhay
+3-14-13 11:19pm
+	Uploaded (/images) Toque_Banner.png
+	Checking in (/ssi) header.htm
+	-- slightly modified the logo to be more readable against a dark background
+	-- added toque logo to website header
+
+Dave Brothers
+3-[14-15]-13
+        -- Created login controller. User can login and a session is established.
+            This involved tacking a super crude submit button on to the nice float.html. It works. Can be pretty later.
+        -- Started logout controller. Needs tweaking.
+
+Elliot Derhay
+3-15-13 21:04
+	Checking in base.css, general.js and float.php
+	-- replaced float.html with float.php for scripting purposes
+	-- converted "register" link to button for switching "login" form to "register" form
+	-- made "x" button switch back to login form while hiding div
+	-- made form and a link values site-relative
+		NOTE for Dave:  I'm hoping this doesn't break the forms.  I know site-relative linking works for most HTML-based resources, but I'm not sure about forms.
+3-26-13 2:36
+	Checking in base.css, new_recipe.js and new_recipe_form.php
+	-- added "Add row" and "Delete" buttons to the table, with some minor style changes
+	-- delete buttons successfully delete their parent rows
+	-- add button successfully adds new row
+		NOTE to Dave:  named elements need to have their numbers updated mathematically via the JS delete function; will figure that out soon;
+3-26-13 11:08
+	Checking in base.css, new_recipe.js and new_recipe_form.php
+	-- replaced delete button per row idea with 1 minus button above
+	-- replaced "Add row" button at button of table with 1 plus button above
+	-- minor button style change
+	-- tr elements now have a class of "row" and an ID of "row_[row number]"
+	-- new row function correctly names elements according to the row they belong to, even if a row has been deleted previously
+3-26-13 11:30
+	Checking in new_recipe_form.php
+	-- made some width changes to make the table fit
+4-11-13 3:36
+trying to see if Ican find out why theuploadfor files isn't working properly.'

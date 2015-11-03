@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#this {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: url(/images/jade.jpg) repeat fixed;
+	z-index: 0;
+}
+
+#trans {
+	background: rgb(0,0,0);
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+}
+
+#slider {
+	background: #eee;
+	border: 1em solid;
+	border-color: #fff #ddd #ddd #fff;
+	border-radius: 3em 0;
+	width: 680px;
+	overflow: hidden;
+	position: absolute;
+	top: -500px;
+	z-index: 1000;
+}
+
+.slider {
+	position: relative;
+	padding: 7px;
+}
+
+.slider > div {
+	float: left;
+	margin: 0;
+	padding: 6px;
+	font-size: 2em;
+}
+
+.slider > div:first-child {
+	width: 64%;
+	border-right: 6px solid #888;
+	padding-right: 0;
+}
+
+.slider > div:last-child {
+	
+}
+
+.slider input {
+	font-size: 1em;
+}
+
+#x {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #888;
+	border: 5px solid;
+	border-color: #777 #999 #999 #777;
+	border-radius: 0 0 0 1em;
+	padding: 5px;
+	font-size: 24px;
+	line-height: 16px;
+	width: 16px;
+	float: none;
+	color: #eee;
+	text-align: center;
+	cursor: pointer;
+}
+
+</style>
+<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/js/general.js"></script>
+<title>floating div</title>
+</head>
+
+<body>
+	<div id="trans"></div>
+	<div id="login"></div>
+	<div id="slider" class="slider">
+		<div>
+			<p>Username: <input type="text" maxlength="8" size="9"></p>
+			<a>Forgot username?</a><br><br>
+			<p>Password: <input type="password" maxlength="8" size="9"></p>
+			<a>Forgot password?</a>
+		</div>
+		<div>
+			<div id="x">&times;</div>
+			<a>Register</a>
+		</div>
+	</div>
+</body>
+</html>

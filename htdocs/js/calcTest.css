@@ -1,0 +1,45 @@
+/* CSS Document */
+
+body {
+	background: url(/images/jade.jpg) repeat;
+	color: #fff;
+}
+
+#vals {
+	display:none;
+}
+
+.buttons div {
+	background-color: #471b15;
+	/*
+	border-image-source: url(/images/choco_square.png);
+	border-image-slice: 15;
+	border-image-width: 5px;
+	border-image-outset: 5px;
+	*/
+	border: 5px solid;
+	border-radius: 3px;
+	border-color: #521f14 #331513 #331513 #521f14;
+	width: 80px;
+	padding: 2px 0;
+	text-align: center;
+	font: 16px bold;
+	color: #F90;
+}
+
+.buttons div:hover {
+	border-color:  #331513 #521f14 #521f14 #331513;
+	padding: 3px 0;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#recalc {
+	float: right;
+	margin-right: 5px;
+}
+
+#reset {
+	float: left;
+}

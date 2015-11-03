@@ -1,0 +1,7 @@
+Ideas for future updates:
+
+1. add somewhere a welcome to the most recently signed up user.
+2. Add a count of currently logged in users
+3.set it up so admins are notified via email when a new recipe is inserted and when a picture needs approved (allow to be turned off at some point)
+4. add firstname to register form
+5. change header on add ingredient form to not show extra (old) info

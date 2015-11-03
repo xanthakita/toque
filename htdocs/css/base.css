@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+	background: #471b15;
+	z-index: 0;
+}
+
+#body, #header_content, #footer_content {
+    width: 1024px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+p {
+	font-size: 1em;
+}
+
+
+
+
+
+/* header area */
+
+#header {
+    position: relative;
+	background: url(/images/header_background.jpg) repeat-x;
+}
+
+#header_content {
+	position: relative;
+    height: 120px;
+}
+
+#banner {
+    clear: both;
+	height: 100px;
+}
+
+.bar {
+	position: absolute;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0;
+	padding: 2px 5px;
+}
+
+.bar a {
+	color: #000;
+	text-decoration: none;
+}
+
+#menu {
+	bottom: 0;
+	left: 0;
+}
+
+#user {
+	bottom: 0;
+	right: 0;
+}
+
+
+
+
+
+
+
+/* main */
+
+#main {
+	width: 100%;
+	background-color: #f0f0f0;
+	overflow: hidden;
+	position: relative;
+}
+
+#body {
+}
+
+/* recipe column */
+
+#recipe, #side, #cookbook {
+	padding: 10px 0;
+}
+
+#recipe, #cookbook {
+    width: 714px;
+    float: right;
+	position: relative;
+}
+
+#recipe h3 {
+	text-align: left;
+}
+
+#recipe ul {
+	list-style-type: none;
+}
+
+#tags {
+	margin: 0;
+	padding: 5px 5px 5px 0;
+	position: relative;
+}
+
+.tag {
+	display: inline-block;
+	position: relative;
+	padding: 0 5px;
+	margin: 0 0 0 5px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	font:  bold "Courier New", Courier, monospace;
+}
+
+#recipe > div:last-child {
+	padding: 10px;
+	position: relative;
+}
+
+#recipe > div:last-child img {
+	margin: 0 10px;
+	position: relative;
+	float: left;
+	border: 1px solid black;
+	border-radius: 0 20px;
+	display: inline;
+}
+
+#recipe > div:last-child p {
+	line-height: normal;
+	margin: 10px 0;
+}
+
+#ingredients_list {
+	clear: both;	
+}
+
+#ingredients_list li {
+	padding-left: 20px;
+}
+
+/* side column */
+
+#side {
+    position: relative;
+    width: 300px;
+    display: inline-block;
+}
+
+.side a {
+	color: #F90;
+}
+
+.side > div {
+    margin: 5px 5px 0 5px;
+    padding: 2px;
+    border-radius: 5px;
+	/*border: 1px solid #000;*/
+	background: url(/images/jade.jpg);
+	color: #fff;
+}
+
+.side > div:first-child {
+	font-weight: bold;
+	text-align: center;
+}
+
+.side > div:nth-child(2) {
+    height: 200px;
+	background: none;
+	width: 200px;
+	margin: 5px auto 0 auto;
+}
+
+#popular, #latest {
+	overflow: auto;
+	overflow-y: hidden;
+	padding: 10px 0 0 20px;
+}
+
+.sideScroll {
+	position: relative;
+	color: #fff;
+}
+
+.sideScroll div {
+	height: 82px;
+	width: 556px;
+	overflow-y: hidden;
+}
+
+.sideScroll img {
+	border: solid #fff 1px;
+	border-radius: 5px;
+	position: relative;
+	float: left;
+	display: block;
+	margin: 0 20px 10px 0;
+}
+
+
+
+
+
+/* footer area */
+
+.footer {color: #fff;}
+.footer a {color: #f90;}
+
+#footer {
+	border-top: #f90 solid 2px;
+	width: 100%;
+	clear: both;
+	position: relative;
+	margin: 0;
+}
+
+#footer_content {position: relative; padding: 5px 0 0 5px;}
+
+#footer_content div {
+	margin: 0 5px 5px 0;
+	padding: 15px;
+	height: 130px;
+	background-color: #471b15;
+	-webkit-border-image-source: url(/images/choco_square.png);
+	border-image-source: url(/images/choco_square.png);
+	-webkit-border-image-slice: 15;
+	border-image-slice: 15;
+	-webkit-border-image-width: auto;
+	border-image-width: auto;
+}
+
+.footer_content div:first-child {
+	position: absolute;
+	text-align: left;
+	min-width: 470px;
+	top: 5px;
+	left: 5px;
+}
+
+.footer_content div:nth-last-child(2),
+.footer_content div:last-child {
+	position: relative;
+	text-align: right;
+	width: 216px;
+	float: right;
+}
+
+
+
+
+
+		/* floating div styles */
+
+#login {cursor: pointer;}
+
+#trans {
+	background: rgb(0,0,0);
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+}
+
+#slider {
+	background: #bdb;
+	border: 1em solid;
+	border-color: #ded #aba #aba #ded;
+	border-radius: 3em 0;
+	width: 680px;
+	overflow: hidden;
+	position: absolute;
+	top: -500px;
+	z-index: 1000;
+}
+
+.slider {position: relative; padding: 7px;}
+
+.slider input[type="submit"] {
+	padding: 6px;
+	line-height: 16px;
+	font-size: 24px;
+}
+
+.slider input[value="Login"] {
+	margin-top: 16px;
+}
+
+.slider a {color: #676; font-size: 0.7em;}
+
+		/* login div */
+
+.loginDiv div,
+.newUser div {
+	float: left;
+	margin: 0;
+	padding: 6px;
+}
+
+.loginDiv {font-size: 2em;}
+
+.loginDiv div:first-child {
+	width: 64%;
+	border-right: 6px solid #787;
+	padding-right: 0;
+}
+
+.loginDiv div:last-child {
+}
+
+.loginDiv input {font-size: 1em;}
+
+		/* register div */
+
+#newUser {
+	display: none;
+	opacity: 0;
+}
+
+.newUser {font-size: 30px;}
+.newUser div:first-child {width: 34%;}
+
+.newUser input,
+.newUser select {
+	font-size: 24px;
+}
+
+		/* misc styles */
+
+.floatBtn {
+	color: #f90;
+	border: 5px solid;
+	border-color: #676 #898 #898 #676;
+	border-radius: 1em 0;
+	background: #787;
+	padding: 5px;
+	margin-top: 6px;
+	font-size: 24px;
+	line-height: 16px;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#x {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	border-radius: 0 0 0 1em;
+	width: 16px;
+	float: none;
+}
+
+#add, #delete {width:20px;}

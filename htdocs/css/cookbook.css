@@ -1,0 +1,70 @@
+/* CSS Document */
+@import url('/css/base.css');
+
+#cookbook {
+	position: relative;
+}
+
+.cookbook > div {
+	margin: 5px;
+	width: 45%;
+	background: #eee;
+	border: 2px solid;
+	border-color: #ddd #fff #fff #ddd;
+}
+
+.cookbook > div:first-child,
+.recipe_link {
+	padding: 5px;
+}
+
+.cookbook > div:first-child {
+	float:left;
+	border-radius: 20px 0;
+}
+
+.cookbook > div:last-child {
+	float: right;
+	height: 540px;
+	overflow-y: scroll;
+	border-radius: 20px 0 0 20px;
+}
+
+.recipe_link {
+	margin: 5px 0;
+	position: relative;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	overflow-y: hidden;
+	border-width: 2px 0;
+	border-style: solid;
+	border-color: #ddd #fff #fff #ddd;
+}
+
+.recipe_link:hover {
+	background-color: #f90;	
+}
+
+.recipe_link:first-child {
+	margin-top: 0;
+	border-top-width: 0;
+}
+
+.recipe_link:last-child {
+	margin-bottom: 0;
+	border-bottom-width: 0;
+}
+
+.cookbook img {
+	float: left;
+	margin-right: 5px;
+	border-radius: 20px;
+	border-top-right-radius: 0;
+	border: 1px solid;
+	border-color: #888 #000 #000 #888;
+}
+
+.cookbook h3 {
+	text-align: left;
+}
